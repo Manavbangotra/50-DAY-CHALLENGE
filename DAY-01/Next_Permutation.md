@@ -7,7 +7,7 @@ the different permutations for following array would be
 2 1 3\
 2 3 1\
 3 1 2\
-3 2 1\
+3 2 1
 
 we have to find next permutation for a given array.
 
