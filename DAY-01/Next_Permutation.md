@@ -23,8 +23,8 @@ next_permutation(A.begin(),A.end());
 Optimal\
 Observation -> Algorithm -> Dry Run -> Code\
 Step 1 start from the last and find the break point that is a[i] < a[i+1] and store this index i in some variable let say index 'ind'.\
-*if ind is found out to be -1 means the array is in desending order just reverse the array\
-*else\
+* if ind is found out to be -1 means the array is in desending order just reverse the array\
+* else\
 Step 2 start from the last again and find the element which is just greater than element at index 'ind' that is a[i]>a[ind] and swap these numbers and break.\
 Step 3 reverse the array reverse(a.begin()+ind +1,a.end());
 
