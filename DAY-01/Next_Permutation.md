@@ -1,13 +1,13 @@
-Next Permutation 
+# Next Permutation 
 for example a given array = [3, 1, 2]
 
 the different permutations for following array would be 
-1 2 3
-1 3 2
-2 1 3
-2 3 1
-3 1 2
-3 2 1
+1 2 3\
+1 3 2\
+2 1 3\
+2 3 1\
+3 1 2\
+3 2 1\
 
 we have to find next permutation for a given array.
 
