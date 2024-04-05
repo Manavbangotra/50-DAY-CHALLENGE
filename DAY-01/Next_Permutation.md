@@ -1,4 +1,7 @@
 # Next Permutation 
+
+(Break point + swap + reverse)
+
 for example a given array = [3, 1, 2]
 
 the different permutations for following array would be 
