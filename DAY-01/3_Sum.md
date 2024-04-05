@@ -1,4 +1,4 @@
-# 3 Sum
+# 3 Sum (2 pointer)
 given an array let say [-1, 0, 1, 2, -1, -4]\
 we have to find out the number of unique triplets whose sum is equal to zero.
 
