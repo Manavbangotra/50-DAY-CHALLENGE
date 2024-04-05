@@ -3,12 +3,12 @@ Write a solution to find the ids of products that are both low fat and recyclabl
 Table: Products
 
 +-------------+---------+\
-| Column Name | Type    |\
+| Column Name | Type____|\
 +-------------+---------+\
-| product_id  | int     |\
-| low_fats    | enum    |\
-| recyclable  | enum    |\
-+-------------+---------+\
+| product_id -| int_____|\
+| low_fats___ | enum___ |\
+| recyclable_ | enum___ |\
++-------------+---------+
 
 Solution\
 Select product_id from Products where low_fats = 'Y' and recyclable = 'Y'
