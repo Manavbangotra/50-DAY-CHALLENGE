@@ -9,7 +9,7 @@ Run a 3 loop solution and check for every possible permutation and put that trip
 time compelxity for the solution would be around N^3 and space complexity would be around N.
 
 Better\
-The better approach would be using the fact that as we know nums[i]+nums[j]+nums[k]=0. we also can use this thing as\
+better approach would be using the fact that as we know nums[i]+nums[j]+nums[k]=0. we also can use this thing as\
 nums[k]=-(nums[i]+nums[j])\
 so we would maintain a hash table and iterate using 2 loops and would find if the required k index element in hashtable we would agian sort the  triplet and push it onto a set.
 
