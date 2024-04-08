@@ -8,26 +8,27 @@ n=9 => (more than n/3) => <3 i.e 4, 5, 6 etc and if a has 4, b has 4 then c woul
 
 so its clear for more than n/3 times occuring elements there would be only 2 elements in such case.
 
-Solution 1:\
-brute force \
+Solution 1:
+brute force 
 define a list and put every element that is occuring more than n/3 times while iterating through the array.\
 <pre>
-for ( i -> 0 to n-1){\
-  if(ls.size()==0 or nums[i]!=ls[0]){\
-    cnt=0;\
-    for (j =0 to n-1){\
-      if (check) cnt++;\
-    }\
-    if (cnt>mm_value) ls.add(nums[i]);\
-  }\
-}\
-
-Solution 2:\
-hashing\
-for(i=0 to n-1){\
-  mp[arr[i]]++;\
-  if(mp[arr[i]] == mm) ls.add(arr[i]);\
-}\
+for ( i -> 0 to n-1){
+  if(ls.size()==0 or nums[i]!=ls[0]){
+    cnt=0;
+    for (j =0 to n-1){
+      if (check) cnt++;
+    }
+    if (cnt>mm_value) ls.add(nums[i]);
+  }
+}
+</pre>
+Solution 2:
+hashing
+<pre>
+for(i=0 to n-1){
+  mp[arr[i]]++;
+  if(mp[arr[i]] == mm) ls.add(arr[i]);
+}
 </pre>
 but we are using extra map has space complexity of O(n).\
 
