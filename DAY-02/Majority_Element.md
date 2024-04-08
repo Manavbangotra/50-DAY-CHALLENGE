@@ -32,6 +32,5 @@ for(i=0 to n-1){
 </pre>
 but we are using extra map has space complexity of O(n).
 
-
-
+Solution 3: Boyer Moore Voting Algorithm.
  
