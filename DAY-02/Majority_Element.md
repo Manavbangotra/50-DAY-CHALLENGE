@@ -13,7 +13,7 @@ brute force \
 define a list and put every element that is occuring more than n/3 times while iterating through the array.\
 for ( i -> 0 to n-1){\
   if(ls.size()==0 or nums[i]!=ls[0]){\
-    cnt=0;\
+ </br>   cnt=0;\
     for (j =0 to n-1){\
       if (check) cnt++;\
     }\
