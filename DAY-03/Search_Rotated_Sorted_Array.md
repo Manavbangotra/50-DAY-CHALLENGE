@@ -1,31 +1,14 @@
-Next Permutation 
-for example a given array = [3, 1, 2]
+# Search in Rotated Sorted Array
 
-the different permutations for following array would be 
-1 2 3
-1 3 2
-2 1 3
-2 3 1
-3 1 2
-3 2 1
+let suppose we have a soreted array and it is rotated such that it looks like\
+[7, 8, 1, 2, 3, 4, 5, 6]\
+for the array we have to search a element and have to return index of it.\
+lets say target is 1.\
+The approach that we would use for it would be of binary search.
 
-we have to find next permutation for a given array.
-
-*Solution*
-
-Brute force
-we have to generate all the permutations of array in sorted order and then we would apply linear search to find our index for given permutation and will return next index's permutation for the answer.
-
-Better
-In built STL is already present in C++ 
-next_permutation(A.begin(),A.end());
-
-Optimal
-Observation -> Algorithm -> Dry Run -> Code
-Step 1 start from the last and find the break point that is a[i] < a[i+1] and store this index i in some variable let say index 'ind'.
-       if ind is found out to be -1 means the array is in desending order just reverse the array
-       else
-Step 2 start from the last again and find the element which is just greater than element at index 'ind' that is a[i]>a[ind] and swap these numbers and break.
-Step 3 reverse the array reverse(a.begin()+ind +1,a.end());
-
-
+Solution:
+1. firstly we would find the mid of the array, for given array the mid is 2.
+2. then we would find which part of array is sorted, for the case atleast one part of array will be always sorted.
+3. then we would find whether the element belongs to the sorted array range or not and we would trim down our range.
+   for this instance the right part is sorted so we would find if 1 belongs to range of sorted array that is 2 to 6 because it is sorted we could find whether it belongs or not using logic of range. as it doesn't belongs we trim down array and new high would be mid -1.
+4. we would repeat the above process until low<=high.
